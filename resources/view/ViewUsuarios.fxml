@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="859.0" stylesheets="@../estilos/EstiloMedico.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="primary.controller.ControllerUsuarios">
+   <top>
+      <FlowPane prefHeight="27.0" prefWidth="200.0" styleClass="tabMenu" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIcon fx:id="close" fill="#fe8481" iconName="CIRCLE">
+               <FlowPane.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </FlowPane.margin>
+            </FontAwesomeIcon>
+            <FontAwesomeIcon fill="#ffd865" iconName="CIRCLE" opacity="0.46">
+               <FlowPane.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </FlowPane.margin>
+            </FontAwesomeIcon>
+            <FontAwesomeIcon fx:id="minimizar" fill="#9bdb7a" iconName="CIRCLE">
+               <FlowPane.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </FlowPane.margin>
+            </FontAwesomeIcon>
+            <Label text="Cadastro De Usuários">
+               <font>
+                  <Font name="Century Gothic Bold" size="16.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets left="250.0" />
+               </FlowPane.margin>
+            </Label>
+         </children></FlowPane>
+   </top>
+   <center>
+      <Pane prefHeight="511.0" prefWidth="859.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btnNovo" alignment="CENTER" layoutX="7.0" layoutY="14.0" prefHeight="38.0" prefWidth="98.0" text="Novo">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/icons8_Add_User_Male_30px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnSalvar" alignment="CENTER" disable="true" layoutX="7.0" layoutY="56.0" prefHeight="38.0" prefWidth="98.0" text="Salvar">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/icons8_Save_30px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnCancelar" alignment="CENTER" disable="true" layoutX="7.0" layoutY="98.0" prefHeight="38.0" prefWidth="98.0" text="Cancelar">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/icons8_Unavailable_30px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnEditar" alignment="CENTER" disable="true" layoutX="7.0" layoutY="151.0" prefHeight="38.0" prefWidth="98.0" text="Editar">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/icons8_Edit_30px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnExcluir" alignment="CENTER" disable="true" layoutX="7.0" layoutY="198.0" prefHeight="38.0" prefWidth="98.0" text="Excluir">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/icons8_Delete_30px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <TableView fx:id="tblUsers" layoutX="82.0" layoutY="259.0" prefHeight="229.0" prefWidth="726.0">
+               <columns>
+                  <TableColumn fx:id="cID" prefWidth="65.0" text="ID" />
+                  <TableColumn fx:id="cNome" prefWidth="212.0" text="Nome" />
+                  <TableColumn fx:id="cEmail" prefWidth="177.0" text="E-mail" />
+                  <TableColumn fx:id="cCod" minWidth="0.0" prefWidth="143.0" text="Código de acesso" />
+                  <TableColumn fx:id="cSenha" minWidth="0.0" prefWidth="128.0" text="Senha" />
+               </columns></TableView>
+            <JFXTextField fx:id="txtCod" disable="true" layoutX="124.0" layoutY="26.0" prefHeight="25.0" prefWidth="260.0" promptText="Código de acesso">
+               <font>
+                  <Font name="Century Gothic Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtEmail" disable="true" layoutX="124.0" layoutY="138.0" prefHeight="25.0" prefWidth="260.0" promptText="E-mail">
+               <font>
+                  <Font name="Century Gothic Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtNome" disable="true" layoutX="427.0" layoutY="138.0" prefHeight="25.0" prefWidth="260.0" promptText="Nome Completo">
+               <font>
+                  <Font name="Century Gothic Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="btnCod" disable="true" layoutX="410.0" layoutY="20.0" onAction="#gerarCodigo" prefHeight="38.0" prefWidth="122.0" text="Gerar Código">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/icons8_Key_30px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXPasswordField fx:id="txtCSenha" disable="true" layoutX="427.0" layoutY="82.0" prefHeight="25.0" prefWidth="260.0" promptText="Confirmar Senha">
+               <font>
+                  <Font name="Century Gothic Bold" size="11.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXPasswordField fx:id="txtSenha" disable="true" layoutX="124.0" layoutY="82.0" prefHeight="25.0" prefWidth="260.0" promptText="Senha">
+               <font>
+                  <Font name="Century Gothic Bold" size="12.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXTextField fx:id="txtPesquisar" layoutX="153.0" layoutY="204.0" prefHeight="25.0" prefWidth="357.0" promptText="Pesquisar Usuário">
+               <font>
+                  <Font name="Century Gothic Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="btnPesquisar" alignment="CENTER" layoutX="516.0" layoutY="203.0" prefHeight="25.0" prefWidth="222.0" text="Pesquisar">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/icons8_Search_30px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXButton>
+            <JFXTextField fx:id="txtID" disable="true" labelFloat="true" layoutX="755.0" layoutY="26.0" prefHeight="25.0" prefWidth="45.0" promptText="ID" />
+            <JFXComboBox fx:id="comboTipo" disable="true" labelFloat="true" layoutX="557.0" layoutY="27.0" prefHeight="25.0" prefWidth="165.0" promptText="Tipo da conta" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

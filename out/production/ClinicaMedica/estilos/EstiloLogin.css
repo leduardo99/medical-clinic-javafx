@@ -1,0 +1,38 @@
+.tabMenu {
+    -fx-background-color: #D9D9D9;
+}
+
+.paneFundo {
+    -fx-background-image: url("../imagens/medicwalpaper.jpg");
+}
+
+.paneCentralFundo {
+    -fx-background-color: #3A5A92;
+}
+
+.paneLogin {
+    -fx-background-color: linear-gradient(to right, #fafbfc 0%, #ecf1f4 100%);
+    -fx-background-radius: 5px;
+}
+
+.paneTxt {
+    -fx-background-color: linear-gradient(to right, #fafbfc 0%, #ecf1f4 100%);
+}
+
+.txtFields {
+    -fx-background-color: #EEF2F5;
+}
+
+.btnEntrar {
+    -fx-background-color: linear-gradient(to right, #edf6f9 0%, #cde5ee 100%);
+    -fx-border-color: #9eb9c3;
+    -fx-border-style: solid;
+}
+
+.btnTipos {
+    -fx-background-color: linear-gradient(to right, #edf6f9 0%, #cde5ee 100%);
+    -fx-border-color: #9eb9c3;
+    -fx-border-radius: 120px;
+    -fx-border-style: solid;
+    -fx-background-radius: 100px;
+}

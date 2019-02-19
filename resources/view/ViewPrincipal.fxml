@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="484.0" prefWidth="779.0" stylesheets="@../estilos/EstiloPrincipal.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="primary.controller.ControllerPrincipal">
+   <children>
+      <BorderPane prefHeight="484.0" prefWidth="779.0">
+         <top>
+            <FlowPane prefHeight="27.0" prefWidth="631.0" styleClass="tabMenu" BorderPane.alignment="CENTER">
+               <children>
+                  <FontAwesomeIcon fx:id="close" fill="#fe8481" iconName="CIRCLE">
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </FlowPane.margin>
+                  </FontAwesomeIcon>
+                  <FontAwesomeIcon fill="#ffd865" iconName="CIRCLE" opacity="0.46">
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </FlowPane.margin>
+                  </FontAwesomeIcon>
+                  <FontAwesomeIcon fx:id="minimizar" fill="#9bdb7a" iconName="CIRCLE">
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </FlowPane.margin>
+                  </FontAwesomeIcon>
+                  <Label text="Dashboard">
+                     <font>
+                        <Font name="Century Gothic Bold" size="16.0" />
+                     </font>
+                     <FlowPane.margin>
+                        <Insets left="280.0" />
+                     </FlowPane.margin>
+                  </Label>
+               </children>
+            </FlowPane>
+         </top>
+         <center>
+            <Pane fx:id="paneCentral" prefHeight="200.0" prefWidth="200.0" styleClass="fundo" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="222.0" layoutY="22.0" text="Dashboard" textFill="#7a7a72">
+                     <font>
+                        <Font name="Century Gothic" size="20.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="222.0" layoutY="76.0" prefHeight="121.0" prefWidth="221.0" styleClass="informationP">
+                     <children>
+                        <Label layoutX="14.0" layoutY="61.0" text="Total Pacientes" textFill="WHITE" />
+                        <ImageView fitHeight="98.0" fitWidth="82.0" layoutX="125.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagens/icons8_User_Groups_50px.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="nPacientes" layoutX="14.0" layoutY="14.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="64.0" layoutY="99.0" styleClass="informations" text="Mais informações" textFill="WHITE" />
+                        <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="159.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagens/icons8_Plus_15px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="515.0" layoutY="76.0" prefHeight="121.0" prefWidth="221.0" styleClass="informationM">
+                     <children>
+                        <Label layoutX="14.0" layoutY="61.0" text="Total Medicos" textFill="WHITE" />
+                        <ImageView fitHeight="98.0" fitWidth="82.0" layoutX="125.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagens/icons8_Doctors_Bag_50px.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="nMedicos" layoutX="14.0" layoutY="14.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="64.0" layoutY="99.0" styleClass="informations" text="Mais informações" textFill="WHITE" />
+                        <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="159.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagens/icons8_Plus_15px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="222.0" layoutY="280.0" prefHeight="121.0" prefWidth="221.0" styleClass="informationS">
+                     <children>
+                        <Label layoutX="14.0" layoutY="61.0" text="Total Arrecadado" textFill="WHITE" />
+                        <ImageView fitHeight="98.0" fitWidth="82.0" layoutX="125.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagens/icons8_Bank_Cards_50px.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="12.0" layoutY="15.0" text="R$3561.6" textFill="WHITE">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="64.0" layoutY="99.0" styleClass="informations" text="Mais informações" textFill="WHITE" />
+                        <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="159.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagens/icons8_Plus_15px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="515.0" layoutY="280.0" prefHeight="121.0" prefWidth="221.0" styleClass="informationA">
+                     <children>
+                        <Label layoutX="14.0" layoutY="56.0" prefHeight="17.0" prefWidth="88.0" text="Agendamentos" textFill="WHITE" />
+                        <ImageView fitHeight="98.0" fitWidth="82.0" layoutX="124.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagens/icons8_Schedule_50px.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="nAgenda" layoutX="13.0" layoutY="16.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="64.0" layoutY="99.0" styleClass="informations" text="Mais informações" textFill="WHITE" />
+                        <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="158.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagens/icons8_Plus_15px.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="14.0" layoutY="71.0" prefHeight="17.0" prefWidth="88.0" text="do dia" textFill="WHITE" />
+                     </children>
+                  </Pane>
+                  <VBox alignment="CENTER_LEFT" layoutX="-6.0" prefHeight="452.0" prefWidth="193.0" styleClass="v-Box">
+                     <children>
+                        <JFXButton fx:id="btnMedico" onAction="#abrirMedicosCad" prefHeight="40.0" prefWidth="190.0" styleClass="buttons" text="Cadastrar Médico" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnPaciente" onAction="#abrirPaciente" prefHeight="40.0" prefWidth="190.0" styleClass="buttons" text="Cadastrar Paciente" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnUsuario" onAction="#abrirUsuarios" prefHeight="40.0" prefWidth="190.0" styleClass="buttons" text="Cadastrar Usuário" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnAgendar" onAction="#abrirAgendamento" prefHeight="40.0" prefWidth="190.0" styleClass="buttons" text="Agendar Consulta" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnAgendamento" onAction="#abrirAgenda" prefHeight="40.0" prefWidth="190.0" styleClass="buttons" text="Agendamentos" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnAgendaM" onAction="#abrirAgendaMed" prefHeight="40.0" prefWidth="190.0" styleClass="buttons" text="Agenda Médicos" textFill="WHITE" />
+                        <JFXButton fx:id="btnAtualizar" prefHeight="40.0" prefWidth="190.0" styleClass="buttons" text="Atualizar" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnLogout" prefHeight="40.0" prefWidth="190.0" styleClass="buttons" text="Logout" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

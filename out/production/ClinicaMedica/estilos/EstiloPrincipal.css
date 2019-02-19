@@ -1,0 +1,57 @@
+.tabMenu {
+    -fx-background-color: #D9D9D9;
+}
+
+.fundo {
+    -fx-background-color: #ECEFF4;
+}
+
+.panesEscolha {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 35px;
+
+}
+
+.informations:hover {
+    -fx-cursor: hand;
+}
+
+.buttons:hover{
+    -fx-background-color: transparent;
+    -fx-border-style: solid;
+    -fx-border-color: white;
+    -fx-border-width: 0px 3px 0px 0px;
+    -fx-border-radius: 0px;
+}
+
+.v-Box{
+    -fx-background-color: #222D31;
+}
+
+.informationP {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+    -fx-background-color: #3C8DBC;
+    -fx-border-width: 0px 0px 25px 0px;
+    -fx-border-color: #3379A7;
+}
+
+.informationM {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+    -fx-background-color: #00A65A;
+    -fx-border-width: 0px 0px 25px 0px;
+    -fx-border-color: #009651;
+}
+
+.informationS {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+    -fx-background-color: #605CA8;
+    -fx-border-width: 0px 0px 25px 0px;
+    -fx-border-color: #565396;
+}
+
+.informationA {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+    -fx-background-color: #DC4B38;
+    -fx-border-width: 0px 0px 25px 0px;
+    -fx-border-color: #C74432;
+}

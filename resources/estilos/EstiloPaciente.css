@@ -1,0 +1,15 @@
+.tabMenu {
+    -fx-background-color: #D9D9D9;
+}
+
+.imageView {
+    -fx-border-style: solid;
+    -fx-border-color: black;
+}
+
+.button:hover{
+    -fx-background-color: transparent;
+    -fx-border-color: #4B77BE;
+    -fx-border-style: solid;
+    -fx-border-width: 0px 0px 0px 4px;
+}

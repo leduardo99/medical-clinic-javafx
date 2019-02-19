@@ -1,0 +1,18 @@
+.button {
+    -fx-background-color: #3C8DBC;
+    -fx-border-color: #3A5A92;
+    -fx-border-style: solid;
+    -fx-border-width: 0px 0px 3px 0px;
+}
+
+.button:hover {
+    -fx-background-color: #66b3ff;
+    -fx-border-color: #3C8DBC;
+    -fx-border-style: solid;
+    -fx-border-width: 0px 0px 3px 0px;
+}
+
+.tabMenu {
+    -fx-background-color: #D9D9D9;
+}
+
